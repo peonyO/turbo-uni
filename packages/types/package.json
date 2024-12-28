@@ -1,0 +1,25 @@
+{
+  "name": "@zxj/types",
+  "version": "1.0.0",
+  "homepage": "https://github.com/peonyO/turbo-uni",
+  "bugs": "https://github.com/peonyO/turbo-uni/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peonyO/turbo-uni.git",
+    "directory": "packages/types"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./global": {
+      "types": "./global.d.ts"
+    }
+  },
+  "dependencies": {
+    "@dcloudio/types": "catalog:"
+  }
+}

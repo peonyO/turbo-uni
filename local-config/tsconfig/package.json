@@ -1,0 +1,27 @@
+{
+  "name": "@zxj/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/peonyO/turbo-uni",
+  "bugs": "https://github.com/peonyO/turbo-uni/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peonyO/turbo-uni.git",
+    "directory": "local-config/tsconfig"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web.json"
+  ],
+  "dependencies": {
+    "@dcloudio/types": "catalog:",
+    "@uni-helper/uni-types": "catalog:",
+    "@zxj/types": "workspace:*",
+    "vite": "catalog:"
+  }
+}

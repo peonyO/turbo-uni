@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "name": "uni-base",
+      "path": "apps/base",
+    },
+    {
+      "name": "@zxj/commitlint",
+      "path": "local-config/lint/commitlint",
+    },
+    {
+      "name": "@zxj/eslint",
+      "path": "local-config/lint/eslint",
+    },
+    {
+      "name": "@zxj/prettier",
+      "path": "local-config/lint/prettier",
+    },
+    {
+      "name": "@zxj/stylelint",
+      "path": "local-config/lint/stylelint",
+    },
+    {
+      "name": "@zxj/node-utils",
+      "path": "local-config/node-utils",
+    },
+    {
+      "name": "@zxj/tsconfig",
+      "path": "local-config/tsconfig",
+    },
+    {
+      "name": "@zxj/vite-config",
+      "path": "local-config/vite-config",
+    },
+    {
+      "name": "@zxj/styles",
+      "path": "packages/styles",
+    },
+    {
+      "name": "@zxj/types",
+      "path": "packages/types",
+    },
+    {
+      "name": "@zxj/turbo-run",
+      "path": "scripts/turbo-run",
+    },
+    {
+      "name": "@zxj/vsh",
+      "path": "scripts/vsh",
+    },
+  ],
+}

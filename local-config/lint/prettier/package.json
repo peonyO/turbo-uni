@@ -1,0 +1,28 @@
+{
+  "name": "@zxj/prettier",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/peonyO/turbo-uni",
+  "bugs": "https://github.com/peonyO/turbo-uni/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peonyO/turbo-uni.git",
+    "directory": "local-config/lint/prettier"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "default": "./index.mjs"
+    }
+  },
+  "dependencies": {
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:"
+  }
+}

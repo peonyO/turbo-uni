@@ -1,0 +1,33 @@
+{
+  "name": "@zxj/commitlint",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/peonyO/turbo-uni",
+  "bugs": "https://github.com/peonyO/turbo-uni/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peonyO/turbo-uni.git",
+    "directory": "local-config/lint/commitlint"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "default": "./index.mjs"
+    }
+  },
+  "dependencies": {
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@zxj/node-utils": "workspace:*",
+    "commitlint-plugin-function-rules": "catalog:",
+    "cz-git": "catalog:",
+    "czg": "catalog:"
+  }
+}

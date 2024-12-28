@@ -1,0 +1,43 @@
+{
+  "name": "turbo-uni",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:play": "pnpm run build --filter=@vben/playground",
+    "changeset": "pnpm exec changeset",
+    "clean": "node ./scripts/clean.mjs",
+    "commit": "czg",
+    "dev": "turbo-run dev",
+    "dev:base": "pnpm -F uni-base run dev:h5",
+    "format": "vsh lint --format",
+    "lint": "vsh lint",
+    "postinstall": "pnpm -r run stub --if-present",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "is-ci || husky",
+    "preview": "turbo-run preview",
+    "publint": "vsh publint",
+    "reinstall": "pnpm clean --del-lock && pnpm install",
+    "update:deps": "npx taze -r -w",
+    "version": "pnpm exec changeset version && pnpm install --no-frozen-lockfile"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@zxj/commitlint": "workspace:*",
+    "@zxj/eslint": "workspace:*",
+    "@zxj/prettier": "workspace:*",
+    "@zxj/stylelint": "workspace:*",
+    "@zxj/tsconfig": "workspace:*",
+    "@zxj/turbo-run": "workspace:*",
+    "@zxj/vite-config": "workspace:*",
+    "@zxj/vsh": "workspace:*",
+    "husky": "catalog:",
+    "is-ci": "catalog:",
+    "lint-staged": "catalog:",
+    "turbo": "catalog:",
+    "unbuild": "catalog:"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
